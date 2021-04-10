@@ -11,11 +11,7 @@ public class StatsService {
     }
 
     public int averageSum(int[] sales) {
-        int sum = 0;
-        for (int item : sales) {
-            sum += item;
-        }
-        return sum/sales.length;
+        return allSalesSum(sales)/sales.length;
     }
 
     public int maxMonth(int[] sales) {
